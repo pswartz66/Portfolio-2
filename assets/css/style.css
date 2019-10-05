@@ -1,0 +1,105 @@
+
+body, html {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+
+}
+
+
+.container-background {
+    background-image: url(../images/coding-background.jpg);
+    
+    min-height: 100%;
+    
+    background-position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+
+    
+
+}
+
+.profile-head {
+    
+    background: rgb(24, 23, 23);
+    height: 230px;
+    width: 230px;
+    border-radius: 50%;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    padding-top: 0px;
+    margin-bottom: 0;
+    overflow: hidden;
+
+    color: ghostwhite;
+
+    border: solid 7px ghostwhite;
+    
+}
+
+img[alt*="profileImgSize"] {
+    height: 220px;
+    width: 220px;
+    border-radius: 50%;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    padding-top: 0px;
+    margin-bottom: 0;
+
+}
+
+.nametitleDiv {
+    
+    height: auto;
+    width: 500px;
+    border-radius: 10px 10px 10px 10px;
+
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    padding-top: 0px;
+    margin-bottom: 0;
+    overflow: hidden;
+
+    color: ghostwhite;
+
+    /* border: solid 1px ghostwhite; */
+
+}
+
+.text-center {
+    text-align: center;
+}
+
+h1 {
+    font-weight: 700;
+}
+
+h3 {
+    font-weight: 300;
+}
+
+.font-lg-center {
+    font-size: 60px;
+    text-align: center;
+}
+
+.font-center {
+    text-align: center;
+}
