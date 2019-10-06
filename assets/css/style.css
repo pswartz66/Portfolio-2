@@ -162,11 +162,38 @@ a {
 
 }
 
+/* /////////////////////////////////////////////// */
+/* ////////------ EXPERIENCE SECTION ------/////// */
+/* /////////////////////////////////////////////// */
+
 .experience {
     
     height: 400px;
     background: rgb(0, 4, 255);
 
+    color: #dbdbdb;
+
+    
+}
+
+.job {
+    height: 80px;
+}
+
+.center-align {
+    margin-left: 40px;
+    margin-right: 20px;
+    padding: 15px 15px 15px 15px;
+    
+}
+
+.indent-left {
+    margin-left: 0px;
+    padding-left: 0;
+}
+
+#border-bottom {
+    border-bottom: solid 1px #01b7ff;
 
 }
 
