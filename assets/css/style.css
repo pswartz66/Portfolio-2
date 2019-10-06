@@ -4,7 +4,14 @@ body, html {
     height: 100%;
     width: 100%;
 
+    
+
 }
+
+
+/* /////////////////////////////////////////////// */
+/* ////////////------ CLASSES ------////////////// */
+/* /////////////////////////////////////////////// */
 
 
 .container-background {
@@ -20,6 +27,25 @@ body, html {
     margin-left: 0;
     margin-right: 0;
     padding: 0;
+
+    
+    overflow: none;
+    
+
+}
+
+.p-head {
+    /* background: rgb(24, 23, 23); */
+    height: 230px;
+    width: 100%;
+    border-radius: 8px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    margin: 0;
 
     
 
@@ -75,7 +101,7 @@ img[alt*="profileImgSize"] {
 
     padding-top: 0px;
     margin-bottom: 0;
-    overflow: hidden;
+    /* overflow: hidden; */
 
     color: ghostwhite;
 
@@ -83,7 +109,6 @@ img[alt*="profileImgSize"] {
 
     border-top: double #01b7ff;
     border-bottom: double #01b7ff;
-
 
 
 }
@@ -120,6 +145,50 @@ a {
     color: #dbdbdb;
     text-decoration: none;
     
+}
+
+.container-content {
+
+
+    /* background: rgb(110, 47, 47); */
+    /* opacity: .7; */
+    /* height: 200px; */
+
+    
+    width: 100%;
+
+    margin-top: 520px;
+    
+
+}
+
+.experience {
+    
+    height: 400px;
+    background: rgb(0, 4, 255);
+
+
+}
+
+.projects {
+
+    height: 400px;
+    background: rgb(238, 82, 89);
+
+}
+
+.goals {
+
+    height: 400px;
+    background: rgb(79, 223, 103);
+
+}
+
+.contact-form {
+
+    height: 400px;
+    background: rgb(228, 181, 54);
+
 }
 
 .font-center a:hover {
