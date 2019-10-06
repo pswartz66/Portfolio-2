@@ -168,23 +168,25 @@ a {
 
 .experience {
     
-    height: 400px;
+    height: auto;
     background: rgb(0, 4, 255);
 
     color: #dbdbdb;
 
-    
 }
 
 .job {
-    height: 80px;
+    height: auto;
 }
 
 .center-align {
-    margin-left: 40px;
-    margin-right: 20px;
-    padding: 15px 15px 15px 15px;
+    /* margin-left: 40px;
+    margin-right: 20px; */
+    padding: 40px 40px 40px 40px;
+
+    border-right: solid 1px #dbdbdb;;
     
+
 }
 
 .indent-left {
