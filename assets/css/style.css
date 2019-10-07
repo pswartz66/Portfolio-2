@@ -189,6 +189,25 @@ a {
 
 }
 
+/* /////////////////////////////////////////////// */
+/* /////////------ CAROUSEL SECTION ------//////// */
+/* /////////////////////////////////////////////// */
+
+#myCarousel {
+    height: 300px;
+    width: 100%;
+}
+
+.carousel{
+    background: #2f4357;
+    margin-top: 20px;
+}
+
+.carousel-item {
+    text-align: center;
+    min-height: 280px;
+}
+
 #border-adjusted {
     margin-top: 20px;
     margin-bottom: 20px;
@@ -218,6 +237,9 @@ a {
     height: 220px;
     overflow: scroll;
     white-space: nowrap;
+
+    
+    margin-top: 80px;
   
     
 }
