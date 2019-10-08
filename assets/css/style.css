@@ -110,6 +110,7 @@ img[alt*="profileImgSize"] {
     border-top: double #01b7ff;
     border-bottom: double #01b7ff;
 
+    
 
 }
 
@@ -124,14 +125,19 @@ img[alt*="profileImgSize"] {
     text-align: center;
     color: #dbdbdb;
     /* border-right: double #01b7ff; */
+    padding-left: 15px;
+    padding-right: 0;
 
 }
 
 .header-mid {
     text-align: center;
     color: #dbdbdb;
-    border-right: 10px;
-    border-left: 10px;
+    /* border-right: 10px;
+    border-left: 10px; */
+    padding-left: 15px;
+    padding-right: 0;
+
 }
 
 .header-right {
@@ -139,6 +145,8 @@ img[alt*="profileImgSize"] {
     color: #dbdbdb;
     /* border-left: double #01b7ff; */
 
+    padding-left: 10px;
+    padding-right: 0;
 }
 
 a {
@@ -169,9 +177,16 @@ a {
 .experience {
     
     height: auto;
-    /* background: rgb(0, 4, 255); */
+    
 
     color: #dbdbdb;
+
+    border-radius: 8px;
+
+    box-shadow:
+        0 0 10px 1px #fff,  /* inner white */
+        0 0 40px 1px#01b7ff, /* middle magenta */
+        0 0 10px 1px #0ff; /* outer cyan */
 
 }
 
@@ -282,19 +297,45 @@ a {
 
 }
 
-.goals {
 
-    height: 400px;
-    background: rgb(79, 223, 103);
-
-}
+/* /////////////////////////////////////////////// */
+/* ////////////------ CONTACT FORM------////////// */
+/* /////////////////////////////////////////////// */
 
 .contact-form {
+    overflow: auto;
+    
+    border-radius: 8px;
+    border-top: solid 1px #01b7ff;
+    border-bottom: solid 1px #01b7ff;
+    border-left: solid 1px #01b7ff;
+    border-right: solid 1px #01b7ff;
 
-    height: 400px;
-    background: rgb(228, 181, 54);
+    
+}
+
+#email-address {
+    color: #dbdbdb;
+}
+
+#email-subject {
+    color: #dbdbdb;
+}
+
+#email-message {
+    color: #dbdbdb;
+}
+
+#email-send-button {
+    margin-bottom: 10px;
+    color: #ffffff;
 
 }
+
+.btn-color {
+    background-color: #1fd62e73;
+}
+
 
 .font-center a:hover {
     color: #01b7ff;
@@ -333,4 +374,17 @@ h6 {
 
 .font-center {
     text-align: center;
+}
+
+
+
+
+
+/* /////////////////////////////////////////////// */
+/* //////////------ FOOTER SECTION ------///////// */
+/* /////////////////////////////////////////////// */
+
+
+.page-footer {
+    background-color: rgb(226, 55, 55);
 }

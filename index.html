@@ -21,6 +21,16 @@
     <script src="https://www.gstatic.com/firebasejs/6.6.2/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/6.6.2/firebase-database.js"></script>
 
+
+    <!-- emailJS configuration -->
+    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("user_P8mEqSFQBiIoBjEVrzVhj");
+        })();
+    </script>
+
+
     <title>Portfolio</title>
 </head>
 
@@ -41,17 +51,22 @@
             <div class="title-links">
                 <div class="row bottom justify-content-center">
 
-                    <div class="col-4 header-left">
+                    <div class="col-3 header-left">
                         <h3 class="font-center"><a href="">Experience</a></h3>
                     </div>
 
-                    <div class="col-4 header-mid">
+                    <div class="col-3 header-mid">
                         <h3 class="font-center"><a href="">Projects</a></h3>
 
                     </div>
 
-                    <div class="col-4 header-right">
-                        <h3 class="font-center"><a href="">Goals</a></h3>
+                    <div class="col-3 header-mid">
+                        <h3 class="font-center"><a href="">Hobbies</a></h3>
+
+                    </div>
+
+                    <div class="col-3 header-right">
+                        <h3 class="font-center"><a href="">Contact</a></h3>
 
                     </div>
 
@@ -98,7 +113,8 @@
                                 <div class="col-7 equal-padding">
                                     <h3>Financial Analyst:</h3>
 
-                                    <p class="job-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint corporis obcaecati
+                                    <p class="job-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Sint corporis obcaecati
                                         doloribus culpa sunt sapiente ut fugiat dicta iure, mollitia fugit iste commodi
                                         nesciunt delectus repudiandae perferendis impedit incidunt assumenda?</p>
 
@@ -121,7 +137,8 @@
                                 <div class="col-7 equal-padding">
                                     <h3>Fund Accountant</h3>
 
-                                    <p class="job-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint corporis obcaecati
+                                    <p class="job-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Sint corporis obcaecati
                                         doloribus culpa sunt sapiente ut fugiat dicta iure, mollitia fugit iste commodi
                                         nesciunt delectus repudiandae perferendis impedit incidunt assumenda?</p>
 
@@ -144,7 +161,8 @@
                                 <div class="col-7 equal-padding">
                                     <h3>Marketing Intern</h3>
 
-                                    <p class="job-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint corporis obcaecati
+                                    <p class="job-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Sint corporis obcaecati
                                         doloribus culpa sunt sapiente ut fugiat dicta iure, mollitia fugit iste commodi
                                         nesciunt delectus repudiandae perferendis impedit incidunt assumenda?</p>
 
@@ -160,7 +178,7 @@
                     <!-- End Experience Section -->
 
 
-                    
+
                     <div id="myCarousel" class="carousel slide">
                         <div id="border-bottom" class="col-12 indent-left">
                             <h2>Projects</h2>
@@ -179,13 +197,14 @@
                             <div class="carousel-item active">
                                 <img class="d-block w-100"
                                     src="https://mdbootstrap.com/img/Photos/Slides/img%20(15).jpg" alt="First slide">
-                                    <div class="carousel-caption d-none d-md-block">
-                                        <h4>Song Sparrow</h4>
-                                        <p>An app that allows you to search for your favorite music artist!</p>
-                                        <p class="github-link"><a href="https://github.com/gainstrive/song-sparrow">Github</a></p>
-                                        <br>
-                                    </div>
-                            
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h4>Song Sparrow</h4>
+                                    <p>An app that allows you to search for your favorite music artist!</p>
+                                    <p class="github-link"><a
+                                            href="https://github.com/gainstrive/song-sparrow">Github</a></p>
+                                    <br>
+                                </div>
+
                             </div>
 
                             <div class="carousel-item">
@@ -209,9 +228,12 @@
                         </a>
                     </div>
 
-                
+
+                    <br>
+
 
                     <!-- test scrolling wrapper -->
+                    <!-- Possibly emded in an iframe some of my instrumentals here -->
                     <div class="scrolling-wrapper">
                         <div class="item"></div>
                         <div class="item"></div>
@@ -222,32 +244,40 @@
                     </div>
 
 
-                    <div class="row projects">
+
+                    <div class="contact-form">
                         <div class="col-12">
-                            <p>My projects go here</p>
+                            <h2>Contact Me</h2>
+                            <form>
+                                <div class="form-group">
+                                    <label id="email-address" for="exampleFormControlInput1">Email address</label>
+                                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                                        placeholder="name@gmail.com">
+                                </div>
+
+                                <div class="form-group">
+                                    <label id="email-subject" for="exampleFormControlInput1">Subject</label>
+                                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                                        placeholder="">
+                                </div>
+
+                                <div class="form-group">
+                                    <label id="email-message" for="exampleFormControlTextarea1">Leave a message</label>
+                                    <textarea placeholder="" class="form-control" id="exampleFormControlTextarea1"
+                                        rows="3"></textarea>
+                                </div>
+
+                                <button id="email-send-button" class="btn btn-color">Submit</button>
+                            </form>
 
                         </div>
                     </div>
 
                     <br>
 
-                    <div class="row goals">
-                        <div class="col-12">
-                            <p>My goals go here</p>
 
-                        </div>
-                    </div>
 
-                    <br>
 
-                    <div class="row contact-form">
-                        <div class="col-12">
-                            <p>Add contact form here</p>
-
-                        </div>
-                    </div>
-
-                    <br>
 
                 </div>
 
@@ -260,6 +290,18 @@
 
 
     </div>
+
+    <!-- Footer -->
+    <footer class="page-footer font-small blue">
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2018 Copyright:
+            <a href="https://mdbootstrap.com/education/bootstrap/"> MDBootstrap.com</a>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
 
 
 
