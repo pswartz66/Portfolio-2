@@ -182,12 +182,12 @@ a {
     color: #dbdbdb;
 
     border-radius: 8px;
-
+/* 
     box-shadow:
-        0 0 10px 1px #fff,  /* inner white */
-        0 0 40px 1px#01b7ff, /* middle magenta */
-        0 0 10px 1px #0ff; /* outer cyan */
-
+        0 0 10px 1px #fff,
+        0 0 40px 1px#01b7ff, 
+        0 0 10px 1px #0ff; 
+*/
 }
 
 .job {
@@ -272,13 +272,17 @@ a {
 
 .item {
     display: inline-block;
-    width: 100%;
+    width: 50%;
     height: 200px;
     background-color: #01b7ff;
     /* border: 1px solid; */
     line-height: 80px;
     text-align: center;
     margin-bottom: 4px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    
 }
 
 
@@ -387,4 +391,19 @@ h6 {
 
 .page-footer {
     background-color: rgb(226, 55, 55);
+}
+
+
+img[alt*="linkedin-img"] {
+    height: 30px;
+    width: 30px;
+    border-radius: 2px;
+
+}
+
+img[alt*="github-img"] {
+    height: 30px;
+    width: 30px;
+    border-radius: 2px;
+
 }
