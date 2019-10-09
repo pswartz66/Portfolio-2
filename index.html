@@ -56,17 +56,17 @@
                     </div>
 
                     <div class="col-3 header-mid">
-                        <h3 class="font-center"><a href="">Projects</a></h3>
+                        <h3 class="font-center"><a id="project-title" href="">Projects</a></h3>
 
                     </div>
 
                     <div class="col-3 header-mid">
-                        <h3 class="font-center"><a href="">Hobbies</a></h3>
+                        <h3 class="font-center"><a id="hobbies-title" href="">Hobbies</a></h3>
 
                     </div>
 
                     <div class="col-3 header-right">
-                        <h3 class="font-center"><a href="">Contact</a></h3>
+                        <h3 class="font-center"><a id="contact-title" href="">Contact</a></h3>
 
                     </div>
 
@@ -182,7 +182,7 @@
 
                         <div id="myCarousel" class="carousel slide">
                             <div id="border-bottom" class="col-12 indent-left">
-                                <h2>Projects</h2>
+                                <h2 id="project-header">Projects</h2>
                             </div>
                             <!-- slide indicators -->
                             <ol class="carousel-indicators">
@@ -255,7 +255,7 @@
 
                     <div class="contact-form">
                         <div class="col-12">
-                            <h2>Contact Me</h2>
+                            <h2 id="contact-header">Contact Me</h2>
                             <form>
                                 <div class="form-group">
                                     <label id="email-address" for="exampleFormControlInput1">Email address</label>
@@ -344,13 +344,33 @@
             });
 
 
-            $('#experience-title').on('click', function(){
-
+            $('#experience-title').on('click', function(e){
+                e.preventDefault();
 
                 $('html, body').animate({
 
                     scrollTop: $('#experience-header').offset().top
                 }, 500);
+            
+            });
+
+            $('#project-title').on('click', function(e){
+                e.preventDefault();
+                
+                $('html, body').animate({
+
+                    scrollTop: $('#project-header').offset().top
+                }, 600);
+            
+            });
+
+            $('#contact-title').on('click', function(e){
+                e.preventDefault();
+                
+                $('html, body').animate({
+
+                    scrollTop: $('#contact-header').offset().top
+                }, 800);
             
             });
             
