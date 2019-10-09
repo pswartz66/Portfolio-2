@@ -78,7 +78,7 @@
 
         <div class="container">
             <div class="row">
-                <div class="container p-head">
+                <div class="row p-head">
                     <div class="profile-head">
                         <img alt="profileImgSize" src="assets/images/ProfilePicture.jpg">
 
@@ -242,13 +242,19 @@
 
                     <!-- test scrolling wrapper -->
                     <!-- Possibly emded in an iframe some of my instrumentals here -->
-                    <div class="row">
-                        <div class="scrolling-wrapper">
-                            <div class="item"></div>
-                            <div class="item"></div>
-                            <div class="item"></div>
-                            <div class="item"></div>
-                        </div>
+                    <div class="row hobbies">
+                        <div class="col-12">
+                        
+                            <div id="border-bottom">
+                                <h2 id="hobbies-header">Hobbies</h2>
+                            </div>
+                            <div class="scrolling-wrapper">
+                                <div class="item"></div>
+                                <div class="item"></div>
+                                <div class="item"></div>
+                                <div class="item"></div>
+                            </div>
+                    </div>
                     </div>
 
 
@@ -285,8 +291,6 @@
 
 
 
-
-
                 </div>
 
 
@@ -303,8 +307,8 @@
     <footer class="page-footer font-small blue">
 
         <!-- Copyright -->
-        <div class="footer-copyright text-center py-3">© 2018 Copyright:
-            <a href="https://mdbootstrap.com/education/bootstrap/"> MDBootstrap.com</a>
+        <div class="footer-text text-center py-3">Follow me on
+            <a href="https://mdbootstrap.com/education/bootstrap/"> </a>
             <a href="https://www.linkedin.com/in/phillip-swartz-a6816199/"><img alt="linkedin-img"
                     src="assets/images/linkedin-img.png"></a>
             <a href="https://github.com/pswartz66"><img alt="github-img" src="assets/images/github-img.png"></a>
@@ -344,36 +348,47 @@
             });
 
 
-            $('#experience-title').on('click', function(e){
+            $('#experience-title').on('click', function (e) {
                 e.preventDefault();
 
                 $('html, body').animate({
 
                     scrollTop: $('#experience-header').offset().top
                 }, 500);
-            
+
             });
 
-            $('#project-title').on('click', function(e){
+            $('#project-title').on('click', function (e) {
                 e.preventDefault();
-                
+
                 $('html, body').animate({
 
                     scrollTop: $('#project-header').offset().top
                 }, 600);
-            
+
             });
 
-            $('#contact-title').on('click', function(e){
+
+            $('#hobbies-title').on('click', function (e) {
                 e.preventDefault();
-                
+
+                $('html, body').animate({
+
+                    scrollTop: $('#hobbies-header').offset().top
+                }, 700);
+
+            });
+
+            $('#contact-title').on('click', function (e) {
+                e.preventDefault();
+
                 $('html, body').animate({
 
                     scrollTop: $('#contact-header').offset().top
-                }, 800);
-            
+                }, 900);
+
             });
-            
+
 
         });
 
