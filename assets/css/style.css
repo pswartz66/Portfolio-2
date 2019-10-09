@@ -213,7 +213,7 @@ a {
 /* /////////////////////////////////////////////// */
 
 #myCarousel {
-    height: 380px;
+    height: auto;
     width: 100%;
 }
 
@@ -224,11 +224,11 @@ a {
 
 .carousel-item {
     text-align: center;
-    min-height: 350px;
+    overflow: auto;
 }
 
 .carousel-inner {
-    height: 400px;
+    overflow: auto;
 }
 
 
