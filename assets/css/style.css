@@ -220,7 +220,7 @@ a {
     width: 100%;
 }
 
-.carousel{
+.carousel {
     /* background: #2f4357; */
     margin-top: 20px;
 }
@@ -246,6 +246,15 @@ a {
     border-left: solid 1px #dbdbdb;
     opacity: .4;
 
+}
+
+
+.carousel-control-prev-icon {
+    background-color: #000000 !important;
+}
+
+.carousel-control-next-icon {
+    background-color: #000000 !important;
 }
 
 .indent-left {
