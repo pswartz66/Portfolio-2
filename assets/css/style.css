@@ -73,6 +73,9 @@ body, html {
     color: ghostwhite;
 
     border: solid 7px ghostwhite;
+
+    box-shadow: 0 0 14px ghostwhite;
+
     
 }
 
@@ -113,7 +116,6 @@ img[alt*="profileImgSize"] {
     border-top: double #01b7ff;
     border-bottom: double #01b7ff;
 
-    
 
 }
 
@@ -202,9 +204,8 @@ a {
 }
 
 .center-align {
-    /* margin-left: 40px;
-    margin-right: 20px; */
-    padding-left: 35px;
+    
+    padding-left: 70px;
 
     display: block;
     margin-left: auto;
@@ -329,6 +330,7 @@ a {
 
 .github-link > a {
     color: #01b7ff;
+
 }
 
 .github-link a:hover {
@@ -390,10 +392,12 @@ a {
 
 h1 {
     font-weight: 700;
+    text-shadow: 0 0 20px #01b7ff;
 }
 
 h2 {
     color: #dbdbdb;
+    text-shadow: 0 0 2px #01b7ff;
 }
 
 
