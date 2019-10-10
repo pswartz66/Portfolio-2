@@ -453,14 +453,23 @@ img[alt*="First slide"] {
     margin: 0;
     height: auto;
     width: 100%;
-    border-radius: 4px;
-
-    opacity: .8;
+    border-radius: 6px;
 
 }
 
-#slide-1-text {
-    color: #000000;
+
+img[alt*="Second slide"] {
+    margin: 0;
+    height: auto;
+    width: 100%;
+    border-radius: 6px;
 
 }
 
+img[alt*="Third slide"] {
+    margin: 0;
+    height: auto;
+    width: 100%;
+    border-radius: 6px;
+
+}
