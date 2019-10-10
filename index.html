@@ -22,14 +22,6 @@
     <script src="https://www.gstatic.com/firebasejs/6.6.2/firebase-database.js"></script>
 
 
-    <!-- emailJS configuration -->
-    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
-    <script type="text/javascript">
-        (function () {
-            emailjs.init("user_P8mEqSFQBiIoBjEVrzVhj");
-        })();
-    </script>
-
 
     <title>Portfolio</title>
 </head>
@@ -197,15 +189,18 @@
                             <!-- slides -->
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
+                                    <h3 class="h3-header-style">Song Sparrow Music Search</h3>
+                                    <h3 class="h3-header-style">An app that allows you to search for your favorite music artist!</h3>
+                                
+                                    <h4 class="github-link"><a
+                                        href="https://github.com/gainstrive/song-sparrow">View source code on github</a></h4>
+
                                     <img class="d-block w-100"
-                                        src="https://mdbootstrap.com/img/Photos/Slides/img%20(15).jpg"
+                                        src="assets/images/jimmy.jpg"
                                         alt="First slide">
-                                    <div class="carousel-caption d-md-block">
-                                        <h4>Song Sparrow</h4>
-                                        <p>An app that allows you to search for your favorite music artist!</p>
-                                        <p class="github-link"><a
-                                                href="https://github.com/gainstrive/song-sparrow">Github</a></p>
-                                        <br>
+
+                                    <div id="slide-1-text" class="carousel-caption d-md-block">
+                                        
                                     </div>
 
                                 </div>
@@ -244,41 +239,52 @@
                     <!-- Possibly emded in an iframe some of my instrumentals here -->
                     <div class="row hobbies">
                         <div class="col-12">
-                        
+
                             <div id="border-bottom">
                                 <h2 id="hobbies-header">Hobbies</h2>
                             </div>
-                            <div class="scrolling-wrapper">
-                                <div class="item"></div>
-                                <div class="item"></div>
-                                <div class="item"></div>
-                                <div class="item"></div>
-                            </div>
+
+                                <div class="scrolling-wrapper">
+                                        
+
+                                    <div class="item">
+                                        
+                                    </div>
+                            
+
+                                    <div class="item"></div>
+                                    <div class="item"></div>
+                                    <div class="item"></div>
+
+                                </div>
+                            
+                        </div>
+
                     </div>
-                    </div>
 
 
 
+                    <br>
+
+                    <!-- Using formspree -->
                     <div class="contact-form">
                         <div class="col-12">
                             <h2 id="contact-header">Contact Me</h2>
-                            <form>
+                            <form method="POST" action="https://formspree.io/philswartz.portfolio@gmail.com">
                                 <div class="form-group">
                                     <label id="email-address" for="exampleFormControlInput1">Email address</label>
                                     <input type="email" class="form-control" id="exampleFormControlInput1"
-                                        placeholder="name@gmail.com">
+                                        name="_replyto" placeholder="name@gmail.com">
                                 </div>
-
-                                <!-- <div class="form-group">
+                                <div class="form-group">
                                     <label id="email-subject" for="exampleFormControlInput1">Subject</label>
-                                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                                    <input name="_subject" class="form-control" id="exampleFormControlInput1"
                                         placeholder="">
-                                </div> -->
-
+                                </div>
                                 <div class="form-group">
                                     <label id="email-message" for="exampleFormControlTextarea1">Leave a message</label>
-                                    <textarea placeholder="" class="form-control" id="exampleFormControlTextarea1"
-                                        rows="3"></textarea>
+                                    <textarea name="message" placeholder="" class="form-control"
+                                        id="exampleFormControlTextarea1" rows="3"></textarea>
                                 </div>
 
                                 <button id="email-send-button" class="btn btn-color">Submit</button>
@@ -289,35 +295,8 @@
 
                     <br>
 
-                    <!-- Using formspree -->
-                    <div class="contact-form">
-                            <div class="col-12">
-                                <h2 id="contact-header">Contact Me</h2>
-                                <form method="POST" action="https://formspree.io/philswartz.portfolio@gmail.com">
-                                    <div class="form-group">
-                                        <label id="email-address" for="exampleFormControlInput1">Email address</label>
-                                        <input type="email" class="form-control" id="exampleFormControlInput1"
-                                            name="_replyto" placeholder="name@gmail.com">
-                                    </div>
-                                <div class="form-group">
-                                    <label id="email-subject" for="exampleFormControlInput1">Subject</label>
-                                    <input name="_subject" class="form-control" id="exampleFormControlInput1"
-                                        placeholder="">
-                                </div>
-                                    <div class="form-group">
-                                        <label id="email-message" for="exampleFormControlTextarea1">Leave a message</label>
-                                        <textarea name="message" placeholder="" class="form-control" id="exampleFormControlTextarea1"
-                                            rows="3"></textarea>
-                                    </div>
-    
-                                    <button id="email-send-button" class="btn btn-color">Submit</button>
-                                </form>
-    
-                            </div>
-                        </div>
-
-
                 </div>
+
 
 
             </div>

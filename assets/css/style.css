@@ -234,7 +234,11 @@ a {
     overflow: auto;
 }
 
-
+.carousel-caption {
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: initial;
+}
 
 #border-adjusted {
     margin-top: 20px;
@@ -267,19 +271,19 @@ a {
 }
 
 /* potentially used for scrolling through experience */
+
+
+
+
 .scrolling-wrapper {
     width: 100%;
     height: auto;
 
-    margin-bottom: 40px;
-
     overflow: scroll;
     white-space: nowrap;
 
-    
-    margin-top: 20px;
-  
-    
+    margin-bottom: 30px;
+
 }
 
 .item {
@@ -287,14 +291,17 @@ a {
     width: 50%;
     height: 200px;
     background-color: #01b7ff;
-    /* border: 1px solid; */
+
     line-height: 80px;
     text-align: center;
-    /* margin-bottom: 4px;
+    margin-bottom: 0;
     margin-left: 10px;
-    margin-right: 10px; */
+    margin-right: 10px;
 
+    padding-left: 10px;
+    padding-right: 10px;
 
+    border-radius: 4px;
     
 }
 
@@ -305,6 +312,10 @@ a {
     height: 400px;
     background: rgb(238, 82, 89);
 
+}
+
+.github-link > a {
+    color: #01b7ff;
 }
 
 .github-link a:hover {
@@ -378,6 +389,18 @@ h3 {
     font-size: 24px;
 }
 
+h4 {
+    font-weight: 100;
+    color: #01b7ff;
+}
+
+.h3-header-style {
+    font-weight: 100;
+    font-size: 24px;
+    color: #dbdbdb;
+
+}
+
 h6 {
     font-weight: 100;
     font-size: 12px;
@@ -425,3 +448,19 @@ img[alt*="github-img"] {
     border-radius: 2px;
 
 }
+
+img[alt*="First slide"] {
+    margin: 0;
+    height: auto;
+    width: 100%;
+    border-radius: 4px;
+
+    opacity: .8;
+
+}
+
+#slide-1-text {
+    color: #000000;
+
+}
+
