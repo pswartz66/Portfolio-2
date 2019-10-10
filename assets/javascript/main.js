@@ -1,7 +1,8 @@
 
 
 
-$('#email-send-button').on('click', function() {
+$('#email-send-button').on('click', function(e) {
+    e.preventDefault();
 
     var fromAddress = $('#email-address').val().trim();
     /* var subject = $('#email-subject').val().trim(); */
